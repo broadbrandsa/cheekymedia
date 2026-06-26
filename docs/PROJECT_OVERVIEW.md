@@ -37,5 +37,5 @@ and make it trivially easy to approve and move forward.
 
 ## Owner
 
-- **Prepared by:** Broadbrand — Shakier (Shakierg@broadbrand.co.za · 0861 374 374).
+- **Prepared by:** Broadbrand — Shakier (Shakierg@broadbrand.co.za · +27 73 388 8810).
 - **Repo:** `broadbrandsa/cheekymedia`.

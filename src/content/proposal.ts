@@ -19,13 +19,18 @@ export const author = {
   company: "Broadbrand",
   contactName: "Shakier",
   email: "Shakierg@broadbrand.co.za",
-  phone: "0861 374 374",
+  phone: "+27 73 388 8810",
   domain: "broadbrand.co.za",
   strapline: "Connecting brands across borders with unified digital experiences.",
   logo: "/images/broadbrand-white.png",
   preparedFor: "Cheeky Media",
   date: "June 2026",
   validForDays: 30,
+} as const;
+
+export const sow = {
+  label: "Download the SOW (PDF)",
+  file: "/cheeky-media-statement-of-work.pdf",
 } as const;
 
 export const investment = {

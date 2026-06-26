@@ -1,6 +1,6 @@
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { investment, included, client } from "@/content/proposal";
+import { investment, included, client, sow } from "@/content/proposal";
 
 export function InvestmentSection() {
   return (
@@ -40,15 +40,27 @@ export function InvestmentSection() {
                   ))}
                 </div>
 
-                <Button
-                  size="lg"
-                  nativeButton={false}
-                  className="mt-9 w-full bg-brand text-brand-foreground hover:bg-brand/90 sm:w-auto"
-                  render={<a href="#contact" />}
-                >
-                  Approve &amp; start
-                  <ArrowRight className="size-4" />
-                </Button>
+                <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <Button
+                    size="lg"
+                    nativeButton={false}
+                    className="w-full bg-brand text-brand-foreground hover:bg-brand/90 sm:w-auto"
+                    render={<a href="#contact" />}
+                  >
+                    Approve &amp; start
+                    <ArrowRight className="size-4" />
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    nativeButton={false}
+                    className="w-full sm:w-auto"
+                    render={<a href={sow.file} download />}
+                  >
+                    <Download className="size-4" />
+                    {sow.label}
+                  </Button>
+                </div>
               </div>
             </div>
 
