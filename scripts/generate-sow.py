@@ -13,7 +13,7 @@ from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
 from reportlab.platypus import (
     BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer, Table, TableStyle,
-    ListFlowable, ListItem, HRFlowable, KeepTogether,
+    ListFlowable, ListItem, HRFlowable, KeepTogether, Image,
 )
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
@@ -26,6 +26,7 @@ SOFT = colors.HexColor("#FBF1F0")  # coral-tinted soft background
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(HERE, "public", "cheeky-media-statement-of-work.pdf")
+LOGO = os.path.join(HERE, "public", "images", "broadbrand-black.png")
 
 styles = getSampleStyleSheet()
 
@@ -89,9 +90,10 @@ def build():
 
     e = []  # story
 
-    # Masthead
+    # Masthead — Broadbrand logo + document meta
+    logo = Image(LOGO, width=44 * mm, height=11 * mm, hAlign="LEFT")
     masthead = Table([[
-        Paragraph("bb  broadbrand", wordmark),
+        logo,
         Paragraph("Statement of Work<br/>Prepared June 2026 · Valid 30 days", right),
     ]], colWidths=[doc.width * 0.5, doc.width * 0.5])
     masthead.setStyle(TableStyle([
