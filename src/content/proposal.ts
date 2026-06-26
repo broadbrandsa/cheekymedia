@@ -7,6 +7,7 @@
 export const client = {
   name: "Cheeky Media",
   site: "cheekymediaworld.com",
+  logo: "/images/cheeky-media-white.png",
   tagline: "Your brand is more than a logo. It's a story — and we're here to tell it.",
   positioning: "Culture engineers, audience whisperers, and storytellers with purpose.",
   email: "admin@cheekymedia.co.za",
@@ -148,10 +149,38 @@ export const included = [
 export const excluded = [
   "E-commerce / payments",
   "Custom or headless CMS build",
-  "Copywriting & photo/video production",
+  "Original photo / video shoots",
   "Bespoke third-party / API integrations",
   "Ongoing maintenance or retainer support",
   "Brand identity / logo redesign",
+] as const;
+
+/** Things Broadbrand can take care of if Cheeky Media needs them. */
+export const weCanHelpWith = [
+  {
+    title: "Copywriting — if you need it",
+    body: "You know your work best, so you're welcome to supply the words. But if you'd rather we handle it, we can write the site copy for you. Just say the word.",
+  },
+  {
+    title: "Stock photography",
+    body: "Where you don't have imagery, we'll source and licence high-quality stock photography that fits the brand and fills the gaps.",
+  },
+] as const;
+
+/** What Cheeky Media supplies so we can hit the ground running. */
+export const clientProvides = [
+  {
+    title: "CI / brand guidelines",
+    body: "Your corporate identity guide — colours, typography, tone and usage rules — so the rebuild stays true to the brand.",
+  },
+  {
+    title: "Logo files",
+    body: "Logo assets in all formats (vector preferred: SVG / EPS / PDF, plus PNG), including any variations.",
+  },
+  {
+    title: "Work-done assets",
+    body: "Your portfolio pieces — project stills, video, client names and any details you want featured across Commercials, Corporate, Digital, Film and TV.",
+  },
 ] as const;
 
 export const whyUs = [
@@ -184,7 +213,7 @@ export const faqs = [
   },
   {
     q: "Who writes the content?",
-    a: "You own the words and visuals — you know your work best. We handle structure, light editing and how it's presented. Full copywriting or photo/video production can be added as a separate line item.",
+    a: "You're welcome to supply the words — you know your work best — but if you'd rather not, we can do the copywriting for you. Same with imagery: where you don't have your own, we'll source and licence stock photography that fits the brand. We'll just need your CI guidelines, logo files and portfolio (work-done) assets to build around.",
   },
   {
     q: "Can we update it ourselves afterwards?",

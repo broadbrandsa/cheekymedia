@@ -2,6 +2,7 @@ import { SiteNav } from "@/components/sections/site-nav";
 import { HeroSection } from "@/components/sections/hero-section";
 import { CaseSection } from "@/components/sections/case-section";
 import { ScopeSection } from "@/components/sections/scope-section";
+import { CollaborationSection } from "@/components/sections/collaboration-section";
 import { ProcessSection } from "@/components/sections/process-section";
 import { WhyUsSection } from "@/components/sections/why-us-section";
 import { InvestmentSection } from "@/components/sections/investment-section";
@@ -17,6 +18,7 @@ export default function Home() {
         <HeroSection />
         <CaseSection />
         <ScopeSection />
+        <CollaborationSection />
         <ProcessSection />
         <WhyUsSection />
         <InvestmentSection />

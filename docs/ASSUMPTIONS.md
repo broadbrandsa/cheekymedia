@@ -23,8 +23,9 @@ Cheeky Media. The following assumptions apply and require validation after appro
 ## Technical
 
 - Client can provide (or delegate) a domain and DNS access for go-live.
-- Content (final copy, images, video, logos) will be supplied by the client or
-  agreed as a separate content production line item.
+- Cheeky Media supplies the **CI / brand guidelines, logo files and work-done
+  (portfolio) assets**. Copy may be supplied by the client or written by Broadbrand
+  on request; stock photography can be sourced by Broadbrand where needed.
 - Third-party services (forms, analytics, email) use standard free/low-cost tiers
   unless the client requests otherwise.
 

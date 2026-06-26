@@ -35,11 +35,25 @@ Fixed-fee website rebuild for Cheeky Media — **R30,000**.
 - Vercel deployment + domain connection.
 - One round of revisions per page after first review.
 
+## We can take care of (if needed)
+
+- **Copywriting** — Cheeky Media can supply the words, or Broadbrand can write the
+  site copy on request.
+- **Stock photography** — where Cheeky Media has no imagery, Broadbrand will source
+  and licence suitable stock photography.
+
+## Cheeky Media provides
+
+- **CI / brand guidelines** — colours, typography, tone and usage rules.
+- **Logo files** — all formats (vector preferred: SVG / EPS / PDF, plus PNG).
+- **Work-done assets** — portfolio pieces: project stills, video, client names and
+  any details to feature (Commercials, Corporate, Digital, Film, TV).
+
 ## Excluded (quoted separately)
 
 - E-commerce / payments.
 - Custom CMS build or headless CMS integration beyond basic content editing.
-- Copywriting & content production (photo/video) beyond light editing.
+- Original photo / video shoots (stock sourcing is covered above).
 - Bespoke third-party / API integrations.
 - Ongoing maintenance, hosting management, or retainer support.
 - Brand identity redesign (logo/visual system) — design *applies* existing brand.

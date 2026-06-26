@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { hero, client, author } from "@/content/proposal";
@@ -22,6 +23,21 @@ export function HeroSection() {
           {hero.sub}
         </p>
 
+        <div className="mt-10 flex items-center gap-4">
+          <span className="text-xs uppercase tracking-wider text-muted-foreground">
+            Prepared for
+          </span>
+          <span className="h-8 w-px bg-border" />
+          <Image
+            src={client.logo}
+            alt={client.name}
+            width={765}
+            height={297}
+            priority
+            className="h-11 w-auto sm:h-12"
+          />
+        </div>
+
         <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
           <Button
             size="lg"
@@ -37,11 +53,7 @@ export function HeroSection() {
           </Button>
         </div>
 
-        <dl className="mt-16 grid max-w-2xl grid-cols-2 gap-x-6 gap-y-8 border-t border-border pt-8 sm:grid-cols-4">
-          <div>
-            <dt className="text-xs uppercase tracking-wider text-muted-foreground">Prepared for</dt>
-            <dd className="mt-1 font-heading font-semibold">{client.name}</dd>
-          </div>
+        <dl className="mt-16 grid max-w-2xl grid-cols-3 gap-x-6 gap-y-8 border-t border-border pt-8">
           <div>
             <dt className="text-xs uppercase tracking-wider text-muted-foreground">By</dt>
             <dd className="mt-1 font-heading font-semibold">{author.company}</dd>
