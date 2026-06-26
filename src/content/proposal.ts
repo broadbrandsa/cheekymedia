@@ -15,8 +15,13 @@ export const client = {
 } as const;
 
 export const author = {
-  company: "DSG",
-  email: "mikee@dsg.co.za",
+  company: "Broadbrand",
+  contactName: "Shakier",
+  email: "Shakierg@broadbrand.co.za",
+  phone: "0861 374 374",
+  domain: "broadbrand.co.za",
+  strapline: "Connecting brands across borders with unified digital experiences.",
+  logo: "/images/broadbrand-white.png",
   preparedFor: "Cheeky Media",
   date: "June 2026",
   validForDays: 30,

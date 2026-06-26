@@ -1,6 +1,6 @@
 import { Mail, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { client, author, investment } from "@/content/proposal";
+import { author, investment } from "@/content/proposal";
 
 export function CtaSection() {
   return (
@@ -49,10 +49,13 @@ export function CtaSection() {
                 <Mail className="size-4 text-brand" />
                 {author.email}
               </a>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
+              <a
+                href={`tel:${author.phone.replace(/\s+/g, "")}`}
+                className="flex items-center gap-3 text-sm transition-colors hover:text-brand"
+              >
                 <Phone className="size-4 text-brand" />
-                {client.phone}
-              </div>
+                {author.phone}
+              </a>
             </div>
           </div>
         </div>

@@ -1,19 +1,30 @@
-import { client, author } from "@/content/proposal";
+import Image from "next/image";
+import { author } from "@/content/proposal";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-border py-10">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-        <div className="flex items-center gap-2 font-heading font-semibold">
-          <span className="inline-block size-2.5 rounded-full bg-brand" />
-          Cheeky<span className="text-muted-foreground">Media</span>
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <div className="flex flex-col gap-3">
+          <Image
+            src={author.logo}
+            alt={author.company}
+            width={642}
+            height={160}
+            className="h-6 w-auto self-start"
+          />
+          <p className="max-w-xs text-sm text-muted-foreground">{author.strapline}</p>
         </div>
-        <p className="text-sm text-muted-foreground">
-          {client.address}
-        </p>
-        <p className="text-sm text-muted-foreground">
-          Proposal by {author.company} · {author.date}
-        </p>
+
+        <div className="flex flex-col gap-1 text-sm text-muted-foreground sm:text-right">
+          <span>
+            Prepared for {author.preparedFor} · {author.date}
+          </span>
+          <a href={`mailto:${author.email}`} className="transition-colors hover:text-foreground">
+            {author.contactName} — {author.email}
+          </a>
+          <span>{author.phone}</span>
+        </div>
       </div>
     </footer>
   );

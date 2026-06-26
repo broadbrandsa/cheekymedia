@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Website Rebuild Proposal — Cheeky Media",
   description:
-    "A fixed-fee proposal to rebuild Cheeky Media's website: faster, bolder, and built to convert. Prepared by DSG.",
+    "A fixed-fee proposal to rebuild Cheeky Media's website: faster, bolder, and built to convert. Prepared by Broadbrand.",
   openGraph: {
     title: "Website Rebuild Proposal — Cheeky Media",
     description:

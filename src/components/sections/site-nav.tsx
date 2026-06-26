@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { nav } from "@/content/proposal";
+import { nav, author } from "@/content/proposal";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
@@ -11,9 +12,15 @@ export function SiteNav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
-        <a href="#top" className="flex items-center gap-2 font-heading text-lg font-semibold">
-          <span className="inline-block size-2.5 rounded-full bg-brand" />
-          Cheeky<span className="text-muted-foreground">Media</span>
+        <a href="#top" className="flex items-center" aria-label={`${author.company} home`}>
+          <Image
+            src={author.logo}
+            alt={author.company}
+            width={642}
+            height={160}
+            priority
+            className="h-6 w-auto"
+          />
         </a>
 
         <nav className="hidden items-center gap-7 md:flex">

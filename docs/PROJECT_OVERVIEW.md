@@ -37,5 +37,5 @@ and make it trivially easy to approve and move forward.
 
 ## Owner
 
-- **Prepared by:** DSG (mikee@dsg.co.za).
-- **Repo:** `cheekymedia-rebuild`.
+- **Prepared by:** Broadbrand — Shakier (Shakierg@broadbrand.co.za · 0861 374 374).
+- **Repo:** `broadbrandsa/cheekymedia`.
