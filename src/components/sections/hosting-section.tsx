@@ -1,4 +1,4 @@
-import { Check, Info, Server } from "lucide-react";
+import { Check, Info, Server, Wallet } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { hosting } from "@/content/proposal";
@@ -15,6 +15,16 @@ export function HostingSection() {
             Fast, secure hosting on Vercel.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">{hosting.intro}</p>
+        </div>
+
+        <div className="mt-8 flex items-start gap-4 rounded-2xl border border-brand/40 bg-brand/10 p-5 sm:p-6">
+          <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-brand/20 text-brand">
+            <Wallet className="size-5" />
+          </span>
+          <div>
+            <p className="font-heading font-semibold">Paid directly to Vercel, not to Broadbrand</p>
+            <p className="mt-1.5 text-sm text-muted-foreground">{hosting.paidDirect}</p>
+          </div>
         </div>
 
         <div className="mt-12 grid gap-5 lg:grid-cols-2">

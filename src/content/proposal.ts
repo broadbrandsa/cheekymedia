@@ -432,6 +432,8 @@ export const digitalAudit = {
 export const hosting = {
   intro:
     "This site is hosted on Vercel, a managed platform used to deliver fast, secure websites to a global audience. Hosting is billed monthly, so the running cost stays predictable and easy to manage.",
+  paidDirect:
+    "This monthly hosting cost is paid by Cheeky Media directly to Vercel, on your own Vercel account. It is not paid to Broadbrand and is separate from the once-off build fee. Broadbrand sets the account up and connects your domain, then you keep full ownership and control of the account and billing.",
   plans: [
     {
       name: "Hobby",
