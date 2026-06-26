@@ -233,6 +233,202 @@ export const faqs = [
   },
 ] as const;
 
+export const audit = {
+  intro:
+    "Your current site is built on WordPress using the Elementor page builder. The foundations are in place: it loads over a secure connection, it is mobile-ready at a basic level, and it can be found by Google. The opportunities lie in finishing, performance, and turning visitors into enquiries.",
+  builtOn: ["WordPress", "Elementor"],
+  issues: [
+    {
+      title: "First impressions and credibility",
+      have:
+        'The main "Why Cheeky Media" introduction on the homepage ends part way through a sentence, and the browser and Google title simply reads "Cheeky Media" with no description.',
+      problem:
+        "For an agency that sells storytelling, an unfinished sentence on the homepage undermines confidence immediately, and a bare title weakens how you appear in search results.",
+      solve:
+        "A rebuilt homepage with complete, polished copy and a proper title and description tuned for search and for your Johannesburg market.",
+    },
+    {
+      title: "Turning visitors into enquiries",
+      have:
+        "The contact form accepts empty submissions, there is no clear call to action near the top of the page, and your phone number and email are plain text rather than clickable.",
+      problem:
+        "You lose leads. Visitors are not guided toward making contact, mobile users cannot tap to call or email, and incomplete form submissions create junk enquiries.",
+      solve:
+        "A clear, repeated call to action throughout the page, validated form fields that capture clean leads, and tap-to-call and tap-to-email links for mobile visitors.",
+    },
+    {
+      title: "Broken and missing elements",
+      have:
+        'The "Services" menu link leads nowhere, and the social media icons in the footer are not linked to any profiles.',
+      problem:
+        "Clicking a dead link or a dead social icon erodes trust and makes the site feel unfinished.",
+      solve:
+        "Every link checked and working, with social icons connected to your live profiles.",
+    },
+  ],
+} as const;
+
+export const digitalAudit = {
+  meta: "June 2026 · Production company · Johannesburg, SA",
+  overall: {
+    score: 38,
+    max: 100,
+    label: "Overall digital health score",
+    status: "Needs urgent attention",
+    note: "Significant gaps across all platforms",
+  },
+  platformScores: [
+    { label: "Website", score: 40 },
+    { label: "Facebook", score: 35 },
+    { label: "LinkedIn", score: 30 },
+    { label: "Instagram", score: 35 },
+    { label: "YouTube", score: 45 },
+    { label: "X / Twitter", score: 25 },
+    { label: "SEO", score: 40 },
+    { label: "Brand identity", score: 55 },
+  ],
+  groups: [
+    {
+      title: "Website",
+      metrics: [
+        { label: "Domain split", value: "2 URLs", note: "Fragmented" },
+        { label: "Copyright year", value: "2023", note: "Stale" },
+        { label: "Robots.txt", value: "Blocks crawlers", note: "SEO issue" },
+        { label: "Contact email", value: "social@ / admin@", note: "Inconsistent" },
+      ],
+      findings: [
+        {
+          text:
+            "Two active domains: cheekymedia.co.za and cheeky-media.com. This splits SEO authority, confuses visitors, and dilutes brand recognition. Content appears to live primarily on cheeky-media.com.",
+          priority: "critical",
+        },
+        {
+          text:
+            "Robots.txt blocks automated access, likely also blocking search engine crawlers and SEO auditing tools. A media company actively harming its own discoverability.",
+          priority: "high",
+        },
+        {
+          text:
+            "Copyright footer shows 2023. Outdated footers signal site neglect to visitors and search engines alike.",
+          priority: "medium",
+        },
+        {
+          text:
+            "Contact email varies across pages (social@, admin@, social@). No single point of contact creates confusion for potential clients.",
+          priority: "low",
+        },
+      ],
+    },
+    {
+      title: "Social media",
+      metrics: [
+        { label: "Facebook likes", value: "1,644", note: "Very low" },
+        { label: "Instagram handle", value: "@cheekymediatv", note: "Not verified" },
+        { label: "LinkedIn followers", value: "105", note: "Critical" },
+        { label: "YouTube", value: "@CheekyMedia", note: "Exists" },
+        { label: "X / Twitter", value: "@CheekyMediaSA", note: "Inactive" },
+      ],
+      findings: [
+        {
+          text:
+            "105 LinkedIn followers for an award-winning production company is critically low. This is the primary B2B discovery platform for brand clients and media buyers.",
+          priority: "critical",
+        },
+        {
+          text:
+            'Facebook page shows only 1,644 likes with just 1 person "talking about this", a near-dead engagement signal. Last visible post referenced April 2022 data.',
+          priority: "critical",
+        },
+        {
+          text:
+            "Instagram (@cheekymediatv) exists but there is no publicly visible follower count or recent post data, which suggests either very low activity or a private/restricted profile.",
+          priority: "high",
+        },
+        {
+          text:
+            "X/Twitter (@CheekyMediaSA) appears inactive, with no accessible post data or recent activity. Dormant accounts harm brand perception.",
+          priority: "high",
+        },
+        {
+          text:
+            "No TikTok presence detected. Given South Africa's digital landscape (TikTok is the #2 favourite platform at 23.8%), this is a significant missed opportunity for a media/content company.",
+          priority: "medium",
+        },
+      ],
+    },
+    {
+      title: "SEO & discoverability",
+      metrics: [],
+      findings: [
+        {
+          text:
+            "Robots.txt actively blocks search engine bots. This is potentially the single biggest SEO issue, as the site may not be indexed at all.",
+          priority: "critical",
+        },
+        {
+          text:
+            "Split domain authority (cheekymedia.co.za vs cheeky-media.com) means backlinks and page rank are divided, reducing search visibility for both domains.",
+          priority: "high",
+        },
+        {
+          text:
+            "No visible content marketing strategy: no blog, case studies, or thought leadership articles. This leaves significant organic search traffic on the table in a competitive media market.",
+          priority: "high",
+        },
+        {
+          text:
+            "Google Business Profile status unknown, with no evidence of a verified listing for their Sandton/Houghton office. Critical for local discoverability.",
+          priority: "medium",
+        },
+      ],
+    },
+  ],
+  strengths: [
+    "Strong production portfolio: multiple SAFTA nominations, long-running e.tv Morning Show contract, work with McDonald's, MTN, Nedbank, ASUS. The underlying product is credible.",
+    'Clear brand positioning: the "sweating marketing assets" model is differentiated and client ROI-focused. This messaging is compelling but buried on the website.',
+    "Content repurposing capability (TV to social to podcast) is genuinely valuable and ahead of many SA competitors. Proven with real client examples (Business Beat with Odette for ASUS).",
+    "Spotify podcast channel exists, a relatively rare capability for a SA production house. Not prominently promoted.",
+  ],
+  recommendations: [
+    {
+      n: "01",
+      title: "Fix robots.txt immediately",
+      body:
+        "Allow search engines to crawl the site. A media company that can't be found on Google is fighting with one hand tied behind its back. Do this today.",
+    },
+    {
+      n: "02",
+      title: "Consolidate to one domain",
+      body:
+        "Redirect cheeky-media.com to cheekymedia.co.za (or vice versa). Consolidate all content, backlinks, and SEO equity under a single authoritative URL.",
+    },
+    {
+      n: "03",
+      title: "Revive LinkedIn with a content strategy",
+      body:
+        "105 followers is dire for a B2B media company. Post weekly case studies, awards, client wins, and behind-the-scenes content. LinkedIn is where brand buyers and media agencies live in SA.",
+    },
+    {
+      n: "04",
+      title: "Launch on TikTok",
+      body:
+        "TikTok is South Africa's second-most popular platform. A production company has more raw content capability than almost anyone: behind-the-scenes clips, show reels, and crew culture content are all easy wins.",
+    },
+    {
+      n: "05",
+      title: "Build a case study library",
+      body:
+        "The ASUS/Business Beat repurposing example is gold. Turn every major client project into a published case study with metrics. This drives SEO, credibility, and inbound leads.",
+    },
+    {
+      n: "06",
+      title: "Verify Google Business Profile",
+      body:
+        "Claim and optimise the listing for both Houghton and Sandton offices. Add photos, awards, and show reels. Essential for local search visibility.",
+    },
+  ],
+} as const;
+
 export const hosting = {
   intro:
     "This site is hosted on Vercel, a managed platform used to deliver fast, secure websites to a global audience. Hosting is billed monthly, so the running cost stays predictable and easy to manage.",
@@ -280,6 +476,7 @@ export const hosting = {
 
 export const nav = [
   { label: "The case", href: "#case" },
+  { label: "Audit", href: "#audit" },
   { label: "Scope", href: "#scope" },
   { label: "Process", href: "#process" },
   { label: "Investment", href: "#investment" },

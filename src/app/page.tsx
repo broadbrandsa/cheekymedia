@@ -1,6 +1,7 @@
 import { SiteNav } from "@/components/sections/site-nav";
 import { HeroSection } from "@/components/sections/hero-section";
 import { CaseSection } from "@/components/sections/case-section";
+import { AuditSection } from "@/components/sections/audit-section";
 import { ScopeSection } from "@/components/sections/scope-section";
 import { CollaborationSection } from "@/components/sections/collaboration-section";
 import { ProcessSection } from "@/components/sections/process-section";
@@ -18,6 +19,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <CaseSection />
+        <AuditSection />
         <ScopeSection />
         <CollaborationSection />
         <ProcessSection />
