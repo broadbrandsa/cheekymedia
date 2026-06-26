@@ -51,47 +51,47 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* Dark editorial palette — the proposal ships in this look by default. */
+/* Broadbrand CI — clean monochrome dark with coral accent (#E77975). */
 :root {
-  --background: oklch(0.155 0.012 285);
-  --foreground: oklch(0.97 0.004 285);
-  --card: oklch(0.197 0.013 285);
-  --card-foreground: oklch(0.97 0.004 285);
-  --popover: oklch(0.197 0.013 285);
-  --popover-foreground: oklch(0.97 0.004 285);
-  --primary: oklch(0.97 0.004 285);
-  --primary-foreground: oklch(0.16 0.012 285);
-  --secondary: oklch(0.255 0.014 285);
-  --secondary-foreground: oklch(0.97 0.004 285);
-  --muted: oklch(0.255 0.014 285);
-  --muted-foreground: oklch(0.7 0.015 285);
-  --accent: oklch(0.255 0.014 285);
-  --accent-foreground: oklch(0.97 0.004 285);
+  --background: oklch(0.15 0 0);
+  --foreground: oklch(0.97 0 0);
+  --card: oklch(0.19 0 0);
+  --card-foreground: oklch(0.97 0 0);
+  --popover: oklch(0.19 0 0);
+  --popover-foreground: oklch(0.97 0 0);
+  --primary: oklch(0.97 0 0);
+  --primary-foreground: oklch(0.15 0 0);
+  --secondary: oklch(0.25 0 0);
+  --secondary-foreground: oklch(0.97 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.71 0 0);
+  --accent: oklch(0.25 0 0);
+  --accent-foreground: oklch(0.97 0 0);
   --destructive: oklch(0.62 0.21 25);
 
-  /* Brand accent — Cheeky coral-pink */
-  --brand: oklch(0.67 0.214 5);
-  --brand-foreground: oklch(0.99 0 0);
-  /* Secondary accent — warm amber for highlights */
-  --accent2: oklch(0.82 0.16 75);
+  /* Brand accent — Broadbrand coral */
+  --brand: #e77975;
+  --brand-foreground: #ffffff;
+  /* Secondary accent — kept on-brand (coral-tinted) */
+  --accent2: #e7a275;
 
   --border: oklch(1 0 0 / 11%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.67 0.214 5);
-  --chart-1: oklch(0.67 0.214 5);
-  --chart-2: oklch(0.82 0.16 75);
+  --ring: #e77975;
+  --chart-1: #e77975;
+  --chart-2: #e7a275;
   --chart-3: oklch(0.7 0.13 200);
   --chart-4: oklch(0.65 0.18 300);
   --chart-5: oklch(0.75 0.16 140);
-  --radius: 0.75rem;
-  --sidebar: oklch(0.197 0.013 285);
-  --sidebar-foreground: oklch(0.97 0.004 285);
-  --sidebar-primary: oklch(0.67 0.214 5);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.255 0.014 285);
-  --sidebar-accent-foreground: oklch(0.97 0.004 285);
+  --radius: 1rem;
+  --sidebar: oklch(0.19 0 0);
+  --sidebar-foreground: oklch(0.97 0 0);
+  --sidebar-primary: #e77975;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: oklch(0.25 0 0);
+  --sidebar-accent-foreground: oklch(0.97 0 0);
   --sidebar-border: oklch(1 0 0 / 11%);
-  --sidebar-ring: oklch(0.67 0.214 5);
+  --sidebar-ring: #e77975;
 }
 
 @layer base {

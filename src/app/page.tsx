@@ -6,6 +6,7 @@ import { CollaborationSection } from "@/components/sections/collaboration-sectio
 import { ProcessSection } from "@/components/sections/process-section";
 import { WhyUsSection } from "@/components/sections/why-us-section";
 import { InvestmentSection } from "@/components/sections/investment-section";
+import { HostingSection } from "@/components/sections/hosting-section";
 import { FaqSection } from "@/components/sections/faq-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { SiteFooter } from "@/components/sections/site-footer";
@@ -22,6 +23,7 @@ export default function Home() {
         <ProcessSection />
         <WhyUsSection />
         <InvestmentSection />
+        <HostingSection />
         <FaqSection />
         <CtaSection />
       </main>

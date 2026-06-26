@@ -233,10 +233,56 @@ export const faqs = [
   },
 ] as const;
 
+export const hosting = {
+  intro:
+    "This site is hosted on Vercel, a managed platform used to deliver fast, secure websites to a global audience. Hosting is billed monthly, so the running cost stays predictable and easy to manage.",
+  plans: [
+    {
+      name: "Hobby",
+      tag: "Free",
+      recommended: false,
+      price: "Free",
+      priceNote: "",
+      features: [
+        "1 million edge requests per month",
+        "100 GB fast data transfer per month",
+        "1 million function invocations per month",
+        "5,000 image transformations per month",
+        "Global CDN, HTTPS/SSL, DDoS mitigation, Web Application Firewall",
+        "Automatic CI/CD and unlimited deployments",
+      ],
+      limitation:
+        "Not licensed for commercial or client sites, so it is not suitable as the live hosting plan for this project. Useful only for testing and previews.",
+    },
+    {
+      name: "Pro",
+      tag: "Recommended",
+      recommended: true,
+      price: "$20 / month",
+      priceNote: "includes $20 of usage credit",
+      features: [
+        "10 million edge requests per month included, then $2 per 1 million",
+        "1 TB fast data transfer per month included, then $0.15 per GB",
+        "1 million function invocations per month included, then $0.60 per 1 million",
+        "5,000 image transformations per month included",
+        "Global CDN, HTTPS/SSL, DDoS mitigation, Web Application Firewall",
+        "Faster builds with no queues, team collaboration, advanced spend management",
+        "Licensed for commercial and client use",
+      ],
+      limitation: "",
+    },
+  ],
+  recommendation:
+    "Pro is the right plan for a live client site, because the free Hobby tier is not licensed for commercial use. For a marketing site of this size, normal monthly traffic sits comfortably inside the included Pro allowances, so the realistic ongoing hosting cost is the $20 per month base. Overage charges only apply at high traffic volumes, and a spend limit can be set so costs never exceed an agreed monthly cap.",
+  currencyNote:
+    "Pricing is shown in USD. Read these figures as an approximate ZAR equivalent at the current exchange rate: [ZAR PLACEHOLDER].",
+} as const;
+
 export const nav = [
   { label: "The case", href: "#case" },
   { label: "Scope", href: "#scope" },
   { label: "Process", href: "#process" },
   { label: "Investment", href: "#investment" },
+  { label: "Hosting", href: "#hosting" },
   { label: "FAQ", href: "#faq" },
 ] as const;
