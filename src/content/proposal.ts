@@ -78,7 +78,7 @@ export const services = [
 export const deliverables = [
   {
     title: "Custom, responsive build",
-    body: "Mobile-first design on Next.js + Tailwind. Up to 5 core page templates: Home, About, Services, Portfolio, Contact.",
+    body: "Mobile-first design on Next.js + Tailwind. Up to 15 core page templates, such as Home, About, Services, Portfolio and Contact.",
   },
   {
     title: "Filterable portfolio",
@@ -137,7 +137,7 @@ export const process = [
 
 export const included = [
   "Custom responsive design (mobile-first)",
-  "Up to 5 core page templates",
+  "Up to 15 core page templates",
   "Reusable shadcn/ui component library",
   "On-page SEO basics (meta, OG, sitemap)",
   "Contact form with email/lead routing",
@@ -190,7 +190,7 @@ export const whyUs = [
     body: "Built on Next.js + Vercel's edge network — fast by default.",
   },
   {
-    stat: "5",
+    stat: "15",
     label: "Page templates",
     body: "A complete, cohesive site — not a one-page placeholder.",
   },
@@ -209,7 +209,7 @@ export const whyUs = [
 export const faqs = [
   {
     q: "Why R30,000 — what's included?",
-    a: "It's a fixed fee covering everything in the scope: design, build, up to 5 page templates, SEO basics, lead capture, analytics and launch. The full breakdown is in the deliverables above.",
+    a: "It's a fixed fee covering everything in the scope: design, build, up to 15 page templates, SEO basics, lead capture, analytics and launch. The full breakdown is in the deliverables above.",
   },
   {
     q: "Who writes the content?",

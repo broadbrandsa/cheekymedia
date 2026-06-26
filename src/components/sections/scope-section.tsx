@@ -15,8 +15,8 @@ export function ScopeSection() {
             A complete, cohesive website — built to convert.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Five core pages, a reusable component system, and everything wired up to
-            launch. No loose ends.
+            Up to 15 core pages, a reusable component system, and everything wired up
+            to launch. No loose ends.
           </p>
         </div>
 

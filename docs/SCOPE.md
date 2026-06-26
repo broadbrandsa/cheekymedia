@@ -27,7 +27,7 @@ Fixed-fee website rebuild for Cheeky Media — **R30,000**.
 ## Included in the R30,000
 
 - Custom responsive design (mobile-first) on Next.js + Tailwind.
-- Up to 5 core page templates as above.
+- Up to 15 core page templates as above.
 - Reusable component library (shadcn/ui based).
 - On-page SEO basics (meta, semantic markup, sitemap, OG tags).
 - Contact form with email/lead routing.
