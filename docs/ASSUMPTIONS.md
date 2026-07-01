@@ -16,9 +16,9 @@ Cheeky Media. The following assumptions apply and require validation after appro
 
 - The rebuild strategy presented here is **directional only**. Final IA, copy and
   visual direction will be confirmed in a discovery session post-approval.
-- Pricing (R30,000) assumes the scope defined in `SCOPE.md`. Material changes to
-  scope (e-commerce, bespoke integrations, ongoing retainers) are out of scope and
-  quoted separately.
+- Pricing (R21,000 once-off, or R2,500 per month over a 12-month term) assumes the
+  scope defined in `SCOPE.md`. Material changes to scope (e-commerce, bespoke
+  integrations) are out of scope and quoted separately.
 
 ## Technical
 

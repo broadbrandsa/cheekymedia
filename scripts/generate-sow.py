@@ -192,29 +192,54 @@ def build():
     ]))
     e.append(t)
 
-    # 7. Investment
+    # 7. Investment — two options
     e.append(Paragraph("7. Investment", h2))
-    inv = Table([[
-        Paragraph("Once-off fixed fee", small),
-        Paragraph("R30,000", S("price", fontName="Helvetica-Bold", fontSize=20,
-                               textColor=INK, alignment=2)),
-    ]], colWidths=[doc.width * 0.5, doc.width * 0.5])
+    e.append(Paragraph(
+        "Two ways to work together. Both options cover the full website build and scope "
+        "above. Choose the one that suits your cash flow.", body))
+    e.append(Spacer(1, 8))
+
+    price_style = S("price", fontName="Helvetica-Bold", fontSize=22, leading=26,
+                    textColor=INK, spaceAfter=2)
+    opt_name = S("optname", fontName="Helvetica-Bold", fontSize=10, textColor=CORAL)
+    opt_body = S("optbody", fontName="Helvetica", fontSize=8.5, leading=12, textColor=MUTED)
+
+    def option_cell(name, price, cadence, note, terms):
+        cell = [
+            Paragraph(name.upper(), opt_name),
+            Spacer(1, 4),
+            Paragraph(price, price_style),
+            Paragraph(cadence, opt_body),
+            Spacer(1, 6),
+            Paragraph(note, opt_body),
+            Spacer(1, 6),
+        ]
+        cell.append(bullets(terms))
+        return cell
+
+    once = option_cell(
+        "Once-off build", "R21,000", "once-off payment",
+        "One payment. The complete website, designed, built and launched.",
+        ["50% to begin, 50% on launch", "Fixed scope, fixed price", "Quote valid for 30 days"])
+    ret = option_cell(
+        "Monthly retainer", "R2,500 / month", "12-month term",
+        "Spread the cost over a year, with ongoing support built in.",
+        ["Includes the full website build",
+         "4 hours of maintenance and changes each month",
+         "Billed monthly over a 12-month term"])
+
+    inv = Table([[once, ret]], colWidths=[doc.width * 0.5, doc.width * 0.5])
     inv.setStyle(TableStyle([
-        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("BACKGROUND", (0, 0), (-1, -1), SOFT),
-        ("BOX", (0, 0), (-1, -1), 1, CORAL),
-        ("TOPPADDING", (0, 0), (-1, -1), 12),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 12),
+        ("BOX", (0, 0), (0, 0), 1, LINE),
+        ("BOX", (1, 0), (1, 0), 1, CORAL),
+        ("TOPPADDING", (0, 0), (-1, -1), 14),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 14),
         ("LEFTPADDING", (0, 0), (-1, -1), 14),
         ("RIGHTPADDING", (0, 0), (-1, -1), 14),
     ]))
     e.append(inv)
-    e.append(Spacer(1, 5))
-    e.append(bullets([
-        "50% to begin, 50% on launch",
-        "Fixed scope, fixed price, no hourly surprises",
-        "Quote valid for 30 days",
-    ]))
 
     # 8. Hosting
     e.append(Paragraph("8. Hosting and running costs", h2))

@@ -7,7 +7,9 @@ rebuild for **Cheeky Media** (https://cheekymediaworld.com). It is not the rebui
 product site itself — it is the sales artifact used to win that engagement.
 
 The proposal presents the scope, approach, timeline, deliverables and pricing for
-rebuilding Cheeky Media's web presence at a fixed fee of **R30,000**.
+rebuilding Cheeky Media's web presence. Two pricing options: a **R21,000** once-off
+fee, or a **R2,500 per month** retainer over a 12-month term that includes the build
+plus 4 hours of maintenance and changes each month.
 
 ## About the client
 

@@ -1,6 +1,8 @@
 # Scope
 
-Fixed-fee website rebuild for Cheeky Media — **R30,000**.
+Website rebuild for Cheeky Media. Two pricing options: **R21,000 once-off**, or a
+**R2,500 per month** retainer over a 12-month term that includes the full build plus
+4 hours of maintenance and changes each month.
 
 ## Pages included
 
@@ -24,7 +26,7 @@ Fixed-fee website rebuild for Cheeky Media — **R30,000**.
 - Contact / lead capture
 - Footer with socials
 
-## Included in the R30,000
+## Included in both options
 
 - Custom responsive design (mobile-first) on Next.js + Tailwind.
 - Up to 15 core page templates as above.

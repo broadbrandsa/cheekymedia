@@ -1,6 +1,6 @@
 import { Mail, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { author, investment } from "@/content/proposal";
+import { author } from "@/content/proposal";
 
 export function CtaSection() {
   return (
@@ -13,8 +13,8 @@ export function CtaSection() {
               Ready to give the work the site it deserves?
             </h2>
             <p className="mt-5 text-lg text-muted-foreground">
-              Approve the {investment.amount} fixed fee and we&apos;ll book a kick-off this
-              week. Questions first? Reach out — happy to walk through any of it.
+              Pick the option that suits you and we&apos;ll book a kick-off this week.
+              Questions first? Reach out — happy to walk through any of it.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

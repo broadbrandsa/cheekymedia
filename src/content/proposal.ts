@@ -34,13 +34,37 @@ export const sow = {
 } as const;
 
 export const investment = {
-  amount: "R30,000",
-  label: "Fixed fee",
-  note: "Once-off. No surprises. Covers everything in the scope below.",
-  terms: [
-    "50% to begin, 50% on launch",
-    "Fixed scope, fixed price",
-    "Quote valid for 30 days",
+  heading: "Two ways to work together.",
+  intro:
+    "Both options cover the full website build and scope below. Choose the one that suits your cash flow.",
+  options: [
+    {
+      id: "once-off",
+      name: "Once-off build",
+      price: "R21,000",
+      cadence: "once-off payment",
+      note: "One payment. The complete website, designed, built and launched.",
+      terms: [
+        "50% to begin, 50% on launch",
+        "Fixed scope, fixed price",
+        "Quote valid for 30 days",
+      ],
+      highlight: false,
+    },
+    {
+      id: "retainer",
+      name: "Monthly retainer",
+      price: "R2,500",
+      priceSuffix: "/ month",
+      cadence: "12-month term",
+      note: "Spread the cost over a year, with ongoing support built in.",
+      terms: [
+        "Includes the full website build",
+        "4 hours of maintenance and changes each month",
+        "Billed monthly over a 12-month term",
+      ],
+      highlight: true,
+    },
   ],
 } as const;
 
@@ -213,8 +237,8 @@ export const whyUs = [
 
 export const faqs = [
   {
-    q: "Why R30,000 — what's included?",
-    a: "It's a fixed fee covering everything in the scope: design, build, up to 15 page templates, SEO basics, lead capture, analytics and launch. The full breakdown is in the deliverables above.",
+    q: "How does the pricing work?",
+    a: "Two options. A once-off build at R21,000, or a monthly retainer at R2,500 per month over a 12-month term that includes the full website build plus 4 hours of maintenance and changes each month. Both cover the full scope: design, build, up to 15 page templates, SEO basics, lead capture, analytics and launch. The retainer simply spreads the cost and adds ongoing support.",
   },
   {
     q: "Who writes the content?",
